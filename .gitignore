@@ -1,0 +1,19 @@
+# Dependencies
+**/node_modules
+
+# Environment
+**/.env
+
+# Logs
+npm-debug.log*
+
+# Build
+frontend/dist
+backend/dist
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode
