@@ -106,19 +106,8 @@ function App() {
     <div className={`app ${backgroundClass}`}>
 
       <nav className="navbar">
-
-        <h2 className="logo">
-          SKYLINE
-        </h2>
-
-        <ul>
-          <li>Home</li>
-          <li>Forecast</li>
-          <li>Map</li>
-          <li>About</li>
-        </ul>
-
-      </nav>
+  <h2 className="logo">SKYLINE</h2>
+</nav>
 
       <section className="hero">
 
@@ -173,7 +162,7 @@ function App() {
 
           <AirQuality weatherData={weatherData} />
 
-          <SunCard weatherData={weatherData} />
+          
           <SunCard weatherData={weatherData} />
 
 <Map weatherData={weatherData} />
