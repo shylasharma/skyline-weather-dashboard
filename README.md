@@ -161,8 +161,15 @@ http://localhost:5173
 
 ## 📷 Screenshots
 
-<img width="776" height="1262" alt="Screenshot 2026-06-26 044628" src="https://github.com/user-attachments/assets/68c0c135-5e0e-4679-97e0-5dc9fafefd6d" />
-<img width="546" height="1084" alt="Screenshot 2026-06-26 044819" src="https://github.com/user-attachments/assets/5e81596c-fd29-4597-aa9a-71b207acbfe9" />
+### 🏠 Home Dashboard
+
+<img width="776" alt="Home Dashboard" src="https://github.com/user-attachments/assets/68c0c135-5e0e-4679-97e0-5dc9fafefd6d" />
+
+---
+
+### 🌤️ Weather Information Panel
+
+<img width="546" alt="Weather Information Panel" src="https://github.com/user-attachments/assets/5e81596c-fd29-4597-aa9a-71b207acbfe9" />
 
 
 ## 👩‍💻 Author
