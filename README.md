@@ -54,7 +54,7 @@ https://skyline-weather-dashboard.onrender.com
 * Node.js
 * Express.js
 * Axios
-* CORS
+
 * Dotenv
 
 ### APIs
