@@ -60,9 +60,9 @@ function SearchBar({
 
   return (
     <div
-      className="search-wrapper"
-      ref={wrapperRef}
-    >
+  className={`search-wrapper ${suggestions.length ? "has-suggestions" : ""}`}
+  ref={wrapperRef}
+>
 
       <div className="search">
 
