@@ -181,6 +181,10 @@ function App() {
         <p className="footer-author">
           Developed by Shyla 
         </p>
+        
+        <p className="footer-pm">
+    Built as part of the PM Accelerator AI Engineer Technical Assessment.
+  </p>
       </footer>
 
     </div>
