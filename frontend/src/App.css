@@ -47,6 +47,7 @@ body {
   text-align: center;
   margin-top: 60px;
   margin-bottom: 50px;
+  
 }
 
 .hero h1 {
@@ -54,6 +55,12 @@ body {
   line-height: 1;
   font-weight: 800;
   margin-bottom: 20px;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.45);
+  color: #f1f5f9;
+}
+
+.hero h1 span {
+    color: #4db8ff;
 }
 
 .hero span {
@@ -64,6 +71,7 @@ body {
   font-size: 20px;
   color: #9ca3af;
   margin-bottom: 35px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.35);
 }
 
 .search {
@@ -1101,4 +1109,22 @@ body {
 
     color:#b8c4d8;
 
+}
+
+.app{
+    position: relative;
+}
+
+.app::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.15);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.app > *{
+    position: relative;
+    z-index: 1;
 }
