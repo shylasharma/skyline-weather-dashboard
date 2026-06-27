@@ -20,74 +20,73 @@ function getWeatherIcon(code) {
 }
 
 function Forecast({ weatherData }) {
-
   if (!weatherData) {
     return (
       <section className="forecast-section">
-
-        <h2 className="section-title">
-          5-Day Forecast
-        </h2>
+        <h2 className="section-title">5-Day Forecast</h2>
 
         <div className="forecast-grid">
-
           <div className="forecast-card">
             <h3>Mon</h3>
-            <div className="forecast-icon"><WiDaySunny /></div>
+            <div className="forecast-icon">
+              <WiDaySunny />
+            </div>
             <p>29°</p>
           </div>
 
           <div className="forecast-card">
             <h3>Tue</h3>
-            <div className="forecast-icon"><WiDayCloudy /></div>
+            <div className="forecast-icon">
+              <WiDayCloudy />
+            </div>
             <p>27°</p>
           </div>
 
           <div className="forecast-card">
             <h3>Wed</h3>
-            <div className="forecast-icon"><WiRain /></div>
+            <div className="forecast-icon">
+              <WiRain />
+            </div>
             <p>25°</p>
           </div>
 
           <div className="forecast-card">
             <h3>Thu</h3>
-            <div className="forecast-icon"><WiDaySunny /></div>
+            <div className="forecast-icon">
+              <WiDaySunny />
+            </div>
             <p>30°</p>
           </div>
 
           <div className="forecast-card">
             <h3>Fri</h3>
-            <div className="forecast-icon"><WiDayCloudy /></div>
+            <div className="forecast-icon">
+              <WiDayCloudy />
+            </div>
             <p>28°</p>
           </div>
-
         </div>
-
       </section>
     );
   }
 
-  const days = weatherData.daily.time.map((date, index) => ({
-    day: new Date(date).toLocaleDateString("en-US", {
-      weekday: "short",
-    }),
-    temp: Math.round(weatherData.daily.temperature_2m_max[index]),
-    code: weatherData.daily.weather_code[index],
-  }));
+  const days = weatherData.daily.time
+    .slice(0, 5)
+    .map((date, index) => ({
+      day: new Date(date).toLocaleDateString("en-US", {
+        weekday: "short",
+      }),
+      temp: Math.round(weatherData.daily.temperature_2m_max[index]),
+      code: weatherData.daily.weather_code[index],
+    }));
 
   return (
     <section className="forecast-section">
-
-      <h2 className="section-title">
-        5-Day Forecast
-      </h2>
+      <h2 className="section-title">5-Day Forecast</h2>
 
       <div className="forecast-grid">
-
-        {days.slice(0, 5).map((item, index) => (
-
+        {days.map((item, index) => (
           <div className="forecast-card" key={index}>
-
             <h3>{item.day}</h3>
 
             <div className="forecast-icon">
@@ -95,13 +94,9 @@ function Forecast({ weatherData }) {
             </div>
 
             <p>{item.temp}°</p>
-
           </div>
-
         ))}
-
       </div>
-
     </section>
   );
 }
